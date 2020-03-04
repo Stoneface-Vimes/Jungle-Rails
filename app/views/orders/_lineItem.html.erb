@@ -1,0 +1,21 @@
+<% @order.line_items.each do |x|%>
+  <tr>
+    <td>
+      <%= image_tag x.product.image.tiny %>
+    </td>
+    <td>
+      <h4><%= x.product.name %></h4>
+      <br>
+      <p><%= x.product.description %></p>
+    </td>
+    <td>
+      <%= x.product.category.name %>
+    </td>
+    <td>
+      <%= humanized_money_with_symbol x.product.price %>
+    </td>
+    <td>
+      <%= x.quantity %>
+    </td>
+  </tr>
+<% end %>
