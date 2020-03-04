@@ -51,6 +51,19 @@ main section.categories-show {
         font-size: 0.8em;
       }
 
+      .outOfStock {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        background-color: #d49b97;
+        border-top-left-radius: 4px;
+        border-bottom-right-radius: 20px;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #ffffff;
+      }
+
       &:hover {
 
         border-color: #999;
