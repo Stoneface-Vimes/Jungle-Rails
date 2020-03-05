@@ -2,13 +2,12 @@
   <header class="page-header">
     <h1>Admin &raquo; All Categories</h1>
   </header>
-
   <div class="well">
-    Will contain a link to making a new category
+    <h3>
+      <%= link_to "New Category"%>
+    </h3>
   </div>
-
   <div class="panel panel-default categories">
-
     <table class="table table-bordered">
       <thead>
         <tr>
@@ -20,7 +19,5 @@
         <%= render "category" %>
       </tbody>
     </table>
-
   </div>
-
 </section>
